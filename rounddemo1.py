@@ -4,10 +4,6 @@
 # Only t-sided. Teamswitch will be added in a later demo
 # Damagetests in concept phase
 
-# VERY incomplete
-# This is on dev for a reason
-# Go view the master branch for working stuff instead
-
 #REQUIRES buymenudemo2.py TO FUNCTION PROPERLY!!!
 
 from buymenudemo2 import *  # import buymenu because i'm not gonna fucking copy paste that long as fuck code
