@@ -47,6 +47,8 @@ def playermoney():                              # Checks how much money you have
 
 def b():                                        # Opens the buymenu (b is the keybind to open the buymenu in CS:GO)
     global pm
+    print('You have $',pm,'!')
+    print('')
     print('0. <<< Back')
     print('1. Pistols')
     print('2. Heavys')
@@ -64,6 +66,7 @@ def b():                                        # Opens the buymenu (b is the ke
     
 def pistols():
     global pm
+    print('')
     print('0. <<< Back')
     print('1. Glock 18      - $200/$300')
     print('2. Dual Berettas - $500/$300')
@@ -71,34 +74,42 @@ def pistols():
     print('4. Tec-9         - $500/$300')
     print('5. Desert Eagle  - $700/$300')
     uinput = input('Enter a number: ')
+    if uinput == '0':
+        b()
     if uinput == '1' and pm >= 200: # Oh god, the if-statements are too much, TOO MUCH!
         wlist.pop(1)
         wlist.insert(1,'1. Glock-18')
         pm = pm - 200
         print('Bought Glock-18')
+        b()
     if uinput == '2' and pm >= 500:
         wlist.pop(1)
         wlist.insert(1,'1. Dual Berettas')
         pm = pm - 500
         print('Bought Dual Berettas')
+        b()
     if uinput == '3' and pm >= 300:
         wlist.pop(1)
         wlist.insert(1,'1. P250')
         pm = pm - 300
         print('Bought P250')
+        b()
     if uinput == '4' and pm >= 500:
         wlist.pop(1)
         wlist.insert(1,'1. Tec-9')
         pm = pm - 500
         print('Bought Tec-9')
+        b()
     if uinput == '5' and pm >= 700: # (too many actually but who cares)
         wlist.pop(1)
         wlist.insert(1,'1. Desert Eagle')
         pm = pm - 700
         print('Bought Desert Eagle')
+        b()
 
 def heavys():
     global pm
+    print('')
     print('0. <<< Back')
     print('1. Nova      - $1200/$900')
     print('2. XM1014    - $2000/$900')
@@ -106,34 +117,42 @@ def heavys():
     print('4. M249      - $5200/$300')
     print('5. Negev     - $5700/$300')
     uinput = input('Enter a number: ')
+    if uinput == '0':
+        b()
     if uinput == '1' and pm >= 1200:
         wlist.pop(2)
         wlist.insert(2,'2. Nova')
         pm = pm - 1200
         print('Bought Nova')
+        b()
     if uinput == '2' and pm >= 2000:
         wlist.pop(2)
         wlist.insert(2,'2. XM1014')
         pm = pm - 2000
         print('Bought XM1014')
+        b()
     if uinput == '3' and pm >= 1200:
         wlist.pop(2)
         wlist.insert(2,'2. Sawed-Off')
         pm = pm - 1200
         print('Bought Sawed-Off')
+        b()
     if uinput == '4' and pm >= 5200:
         wlist.pop(2)
         wlist.insert(2,'2. M249')
         pm = pm - 5200
         print('Bought M249')
+        b()
     if uinput == '5' and pm >= 5700:
         wlist.pop(2)
         wlist.insert(2,'2. Negev')
         pm = pm - 5700
         print('Bought Negev')
+        b()
 
 def smgs():
     global pm
+    print('')
     print('0. <<< Back')
     print('1. MAC-10   - $1050/$600')
     print('2. MP7      - $1700/$600')
@@ -141,34 +160,42 @@ def smgs():
     print('4. P90      - $2350/$300')
     print('5. PP-Bizon - $1400/$600')
     uinput = input('Enter a number: ')
+    if uinput == '0':
+        b()
     if uinput == '1' and pm >= 1050:
         wlist.pop(2)
         wlist.insert(2,'2. MAC-10')
         pm = pm - 1050
         print('Bought MAC-10')
+        b()
     if uinput == '2' and pm >= 1700:
         wlist.pop(2)
         wlist.insert(2,'2. MP7')
         pm = pm - 1700
         print('Bought MP7')
+        b()
     if uinput == '3' and pm >= 1200:
         wlist.pop(2)
         wlist.insert(2,'2. UMP-45')
         pm = pm - 1200
         print('Bought UMP-45')
+        b()
     if uinput == '4' and pm >= 2350:
         wlist.pop(2)
         wlist.insert(2,'2. P90')
         pm = pm - 2350
         print('Bought P90')
+        b()
     if uinput == '5' and pm >= 1400:    # Please don't buy this gun in the real game, ever.
         wlist.pop(2)                    # Don't, please.
         wlist.insert(2,'2. PP-Bizon')   # No, i beg you!
         pm = pm - 1400                  # Why would you even want to have it?
         print('PP-Bizon')               # It does absolutely no damage at all...
+        b()
 
 def rifles():
     global pm
+    print('')
     print('0. <<< Back')
     print('1. Galil AR - $2000/$300')
     print('2. AK-47    - $2700/$300')
@@ -177,36 +204,44 @@ def rifles():
     print('5. AWP      - $4750/$100')
     print('6. G3SG1    - $5000/$300')
     uinput = input('Enter a number: ')
+    if uinput == '0':
+        b()
     if uinput == '1' and pm >= 2000:
         wlist.pop(2)
         wlist.insert(2,'2. Galil AR')
         pm = pm - 2000
         print('Bought Galil AR')
+        b()
     if uinput == '2' and pm >= 2700:
         wlist.pop(2)
         wlist.insert(2,'2. AK-47')
         pm = pm - 2700
         print('Bought AK-47')
+        b()
     if uinput == '3' and pm >= 1700:
         wlist.pop(2)
         wlist.insert(2,'2. SSG 08')
         pm = pm - 1700
         print('Bought SSG 08')
+        b()
     if uinput == '4' and pm >= 3000:
         wlist.pop(2)
         wlist.insert(2,'2. SG 553')
         pm = pm - 3000
         print('Bought SG 553')
+        b()
     if uinput == '5' and pm >= 4750:
         wlist.pop(2)
         wlist.insert(2,'2. AWP')
         pm = pm - 4750
         print('Bought AWP')
+        b()
     if uinput == '6' and pm >= 5000:
         wlist.pop(2)
         wlist.insert(2,'2. G3SG1')
         pm = pm - 5000
         print('Bought G3SG1')
+        b()
 
 def knife():                                    # Switch out your current knife with another one
     print('Choose your knife:') # I know, some are missing, don't hang me because of that, they'll get added somewhen
