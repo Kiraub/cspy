@@ -1,3 +1,4 @@
+# Made in python 3.5 (32-bit)
 # Testing the functionality of a simple round. Moving, actions and such
 # No enemys, AI is in concept phase
 # Buymenu available, some gear is already available
