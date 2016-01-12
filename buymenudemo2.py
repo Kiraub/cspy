@@ -81,30 +81,35 @@ def pistols():
         wlist.insert(1,'1. Glock-18')
         pm = pm - 200
         print('Bought Glock-18')
+        print('')
         b()
     if uinput == '2' and pm >= 500:
         wlist.pop(1)
         wlist.insert(1,'1. Dual Berettas')
         pm = pm - 500
         print('Bought Dual Berettas')
+        print('')
         b()
     if uinput == '3' and pm >= 300:
         wlist.pop(1)
         wlist.insert(1,'1. P250')
         pm = pm - 300
         print('Bought P250')
+        print('')
         b()
     if uinput == '4' and pm >= 500:
         wlist.pop(1)
         wlist.insert(1,'1. Tec-9')
         pm = pm - 500
         print('Bought Tec-9')
+        print('')
         b()
     if uinput == '5' and pm >= 700: # (too many actually but who cares)
         wlist.pop(1)
         wlist.insert(1,'1. Desert Eagle')
         pm = pm - 700
         print('Bought Desert Eagle')
+        print('')
         b()
 
 def heavys():
@@ -124,30 +129,35 @@ def heavys():
         wlist.insert(2,'2. Nova')
         pm = pm - 1200
         print('Bought Nova')
+        print('')
         b()
     if uinput == '2' and pm >= 2000:
         wlist.pop(2)
         wlist.insert(2,'2. XM1014')
         pm = pm - 2000
         print('Bought XM1014')
+        print('')
         b()
     if uinput == '3' and pm >= 1200:
         wlist.pop(2)
         wlist.insert(2,'2. Sawed-Off')
         pm = pm - 1200
         print('Bought Sawed-Off')
+        print('')
         b()
     if uinput == '4' and pm >= 5200:
         wlist.pop(2)
         wlist.insert(2,'2. M249')
         pm = pm - 5200
         print('Bought M249')
+        print('')
         b()
     if uinput == '5' and pm >= 5700:
         wlist.pop(2)
         wlist.insert(2,'2. Negev')
         pm = pm - 5700
         print('Bought Negev')
+        print('')
         b()
 
 def smgs():
@@ -167,30 +177,35 @@ def smgs():
         wlist.insert(2,'2. MAC-10')
         pm = pm - 1050
         print('Bought MAC-10')
+        print('')
         b()
     if uinput == '2' and pm >= 1700:
         wlist.pop(2)
         wlist.insert(2,'2. MP7')
         pm = pm - 1700
         print('Bought MP7')
+        print('')
         b()
     if uinput == '3' and pm >= 1200:
         wlist.pop(2)
         wlist.insert(2,'2. UMP-45')
         pm = pm - 1200
         print('Bought UMP-45')
+        print('')
         b()
     if uinput == '4' and pm >= 2350:
         wlist.pop(2)
         wlist.insert(2,'2. P90')
         pm = pm - 2350
         print('Bought P90')
+        print('')
         b()
     if uinput == '5' and pm >= 1400:    # Please don't buy this gun in the real game, ever.
         wlist.pop(2)                    # Don't, please.
         wlist.insert(2,'2. PP-Bizon')   # No, i beg you!
         pm = pm - 1400                  # Why would you even want to have it?
         print('PP-Bizon')               # It does absolutely no damage at all...
+        print('')
         b()
 
 def rifles():
@@ -211,36 +226,42 @@ def rifles():
         wlist.insert(2,'2. Galil AR')
         pm = pm - 2000
         print('Bought Galil AR')
+        print('')
         b()
     if uinput == '2' and pm >= 2700:
         wlist.pop(2)
         wlist.insert(2,'2. AK-47')
         pm = pm - 2700
         print('Bought AK-47')
+        print('')
         b()
     if uinput == '3' and pm >= 1700:
         wlist.pop(2)
         wlist.insert(2,'2. SSG 08')
         pm = pm - 1700
         print('Bought SSG 08')
+        print('')
         b()
     if uinput == '4' and pm >= 3000:
         wlist.pop(2)
         wlist.insert(2,'2. SG 553')
         pm = pm - 3000
         print('Bought SG 553')
+        print('')
         b()
     if uinput == '5' and pm >= 4750:
         wlist.pop(2)
         wlist.insert(2,'2. AWP')
         pm = pm - 4750
         print('Bought AWP')
+        print('')
         b()
     if uinput == '6' and pm >= 5000:
         wlist.pop(2)
         wlist.insert(2,'2. G3SG1')
         pm = pm - 5000
         print('Bought G3SG1')
+        print('')
         b()
 
 def knife():                                    # Switch out your current knife with another one
